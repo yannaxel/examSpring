@@ -11,7 +11,7 @@ public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="id",nullable = false)
-    private Integer id;
+    private Long id;
     @Column(name="intitule")
     private String intitule;
     @Column(name="reponse")
