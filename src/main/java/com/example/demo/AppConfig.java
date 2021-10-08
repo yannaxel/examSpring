@@ -13,12 +13,12 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
     @Bean
     public SerieService serieService(SerieRepository serieRepository){
-        return new SerieServiceImpl(serieRepository){};
+        return new SerieServiceImpl(serieRepository);
     }
 
     @Bean
     public QuestionService questionService(QuestionRepository questionRepository)
     {
-        return new QuestionServiceImpl(questionRepository){};
+        return new QuestionServiceImpl(questionRepository);
     }
 }
